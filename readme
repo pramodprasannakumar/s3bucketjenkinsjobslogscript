@@ -16,7 +16,9 @@ add secret key
 add region
 add json
 
+#AWS CLI credentials: Make sure you have the necessary AWS CLI credentials set up on your system. You can check by running.
 
+aws sts get-caller-identity
 
 #list the bucket from terminal
 aws s3 ls
@@ -26,6 +28,12 @@ aws s3 ls
 #create s3 bucket
 #add your s3 bucket name inside script
 
-then run script
+
+#change file permission of script
+
+chmod 777 s3filename.sh  
+
+#then run script
+
 
 ./s3filename.sh
