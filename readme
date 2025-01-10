@@ -1,0 +1,31 @@
+before running script 
+
+prerequesist are
+# jenkins need to be installed and in jenkins instance need to install aws cli
+#install aws cli
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+check aws --version
+
+#aws configure
+add access key      #to create access and secret key in aws url goto security creadentials / create acces key and secrete key 
+add secret key
+add region
+add json
+
+
+
+#list the bucket from terminal
+aws s3 ls
+
+
+#set your jenkins path inside script
+#create s3 bucket
+#add your s3 bucket name inside script
+
+then run script
+
+./s3filename.sh
